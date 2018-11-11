@@ -1,0 +1,92 @@
+{
+  "Categories": [
+    {
+      "title": "Weather",
+      "index": 0,
+      "fileType": "pdf",
+      "fileName": "ExecutiveSummary.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day1",
+      "index": 1,
+      "fileType": "video",
+      "fileName": "Business Aligned.mp4",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day2",
+      "index": 2,
+      "fileType": "image",
+      "fileName": "house.jpg",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day3",
+      "index": 3,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day4",
+      "index": 4,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day5",
+      "index": 5,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day6",
+      "index": 6,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day7",
+      "index": 7,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day8",
+      "index": 8,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day9",
+      "index": 9,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    },
+    {
+      "title": "Day10",
+      "index": 10,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": ""
+    }
+  ]
+}
