@@ -50,19 +50,21 @@ public class ImageAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         Model.Categories currentItem = (Model.Categories) getItem(position);
-
-
+        int iconResId = mContext.getResources().getIdentifier(currentItem.getThumbImage(), "drawable",mContext.getPackageName());
         if(currentItem!=null){
-            viewHolder.textView.setText(currentItem.getTitle());
+           viewHolder.imageView.setBackground(mContext.getResources().getDrawable(iconResId));
+
         }
         return convertView;
     }
 
     private class ViewHolder {
-        TextView textView;
+        ImageView imageView;
 
         public ViewHolder(View view) {
-            textView = (TextView) view.findViewById(R.id.textView);
+            imageView = (ImageView) view.findViewById(R.id.textView);
         }
     }
+
+
 }

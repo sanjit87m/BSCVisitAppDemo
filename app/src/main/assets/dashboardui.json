@@ -6,87 +6,53 @@
       "fileType": "pdf",
       "fileName": "ExecutiveSummary.pdf",
       "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "weather"
     },
     {
-      "title": "Day1",
+      "title": "Agenda",
       "index": 1,
       "fileType": "video",
       "fileName": "Business Aligned.mp4",
       "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "agenda"
     },
     {
-      "title": "Day2",
+      "title": "DC Tour",
       "index": 2,
       "fileType": "image",
       "fileName": "house.jpg",
       "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "dctour"
     },
     {
-      "title": "Day3",
+      "title": "Operating Model",
       "index": 3,
       "fileType": "pdf",
       "fileName": "InfrastructureServicesOverview.pdf",
       "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "operatingmodel"
     },
     {
-      "title": "Day4",
+      "title": "Solutions",
       "index": 4,
-      "fileType": "pdf",
+      "fileType": "Solutions",
       "fileName": "InfrastructureServicesOverview.pdf",
       "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "solution"
     },
     {
-      "title": "Day5",
+      "title": "Add On",
       "index": 5,
       "fileType": "pdf",
       "fileName": "InfrastructureServicesOverview.pdf",
       "location": "local",
-      "url": ""
-    },
-    {
-      "title": "Day6",
-      "index": 6,
-      "fileType": "pdf",
-      "fileName": "InfrastructureServicesOverview.pdf",
-      "location": "local",
-      "url": ""
-    },
-    {
-      "title": "Day7",
-      "index": 7,
-      "fileType": "pdf",
-      "fileName": "InfrastructureServicesOverview.pdf",
-      "location": "local",
-      "url": ""
-    },
-    {
-      "title": "Day8",
-      "index": 8,
-      "fileType": "pdf",
-      "fileName": "InfrastructureServicesOverview.pdf",
-      "location": "local",
-      "url": ""
-    },
-    {
-      "title": "Day9",
-      "index": 9,
-      "fileType": "pdf",
-      "fileName": "InfrastructureServicesOverview.pdf",
-      "location": "local",
-      "url": ""
-    },
-    {
-      "title": "Day10",
-      "index": 10,
-      "fileType": "pdf",
-      "fileName": "InfrastructureServicesOverview.pdf",
-      "location": "local",
-      "url": ""
+      "url": "",
+      "thumbImage": "addon"
     }
   ]
 }

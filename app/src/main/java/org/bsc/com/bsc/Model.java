@@ -31,6 +31,9 @@ public class Model {
         private String location;
         @SerializedName("url")
         private String url;
+        @SerializedName("thumbImage")
+        private String thumbImage;
+
 
         public String getTitle() {
             return title;
@@ -78,6 +81,14 @@ public class Model {
 
         public void setUrl(String url) {
             this.url = url;
+        }
+
+        public String getThumbImage() {
+            return thumbImage;
+        }
+
+        public void setThumbImage(String thumbImage) {
+            this.thumbImage = thumbImage;
         }
     }
 

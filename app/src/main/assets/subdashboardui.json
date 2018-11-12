@@ -1,0 +1,86 @@
+{
+  "Categories": [
+    {
+      "title": "Learning Transformation",
+      "index": 0,
+      "fileType": "pdf",
+      "fileName": "ExecutiveSummary.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "learningtransformation"
+    },
+    {
+      "title": "DevOps Transformation",
+      "index": 1,
+      "fileType": "video",
+      "fileName": "Business Aligned.mp4",
+      "location": "local",
+      "url": "",
+      "thumbImage": "devopstransformation"
+    },
+    {
+      "title": "Process Ops Transformation",
+      "index": 2,
+      "fileType": "image",
+      "fileName": "house.jpg",
+      "location": "local",
+      "url": "",
+      "thumbImage": "processopstransformation"
+    },
+    {
+      "title": "HR Transformation",
+      "index": 3,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "hrtransformation"
+    },
+    {
+      "title": "Digital Strategy",
+      "index": 4,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "digitalstrategy"
+    },
+    {
+      "title": "Extreme Agile",
+      "index": 5,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "extremeagile"
+    },
+    {
+      "title": "Infosys heatcare",
+      "index": 6,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "healthcarerequirement"
+    },
+    {
+      "title": "infosys claim",
+      "index": 7,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "claimplatform"
+    },
+    {
+      "title": "nursebot",
+      "index": 8,
+      "fileType": "pdf",
+      "fileName": "InfrastructureServicesOverview.pdf",
+      "location": "local",
+      "url": "",
+      "thumbImage": "nursebot"
+    }
+
+  ]
+}

@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SplashActivity"
-            android:screenOrientation="unspecified">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,8 +41,11 @@
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity android:name=".ImageActivity"
-            android:screenOrientation="unspecified"
             ></activity>
+        <activity
+            android:name=".SubDashboardActivity"
+             />
+
     </application>
 
 </manifest>

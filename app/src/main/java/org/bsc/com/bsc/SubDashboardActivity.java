@@ -1,33 +1,29 @@
 package org.bsc.com.bsc;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ExpandableListView;
 import android.widget.GridView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import org.bsc.com.bsc.PdfView.SampleActivity;
 import org.bsc.com.bsc.VideoPlayerView.FullscreenActivity;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 
 
-public class DashboardActivity extends Activity {
+public class SubDashboardActivity extends Activity {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
     HashMap<String,String> contentData;
@@ -37,12 +33,26 @@ public class DashboardActivity extends Activity {
     String FILE_NAME ="hello.txt";
     //Permision code that will be checked in the method onRequestPermissionsResult
     private int STORAGE_PERMISSION_CODE = 23;
-    Activity activity = DashboardActivity.this;
+    TextView header_back_tv;
+    TextView header_detail;
+    Activity activity = SubDashboardActivity.this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        header_back_tv = (TextView) toolbar.findViewById(R.id.header_back_tv);
+        header_back_tv.setVisibility(View.VISIBLE);
+        header_detail =(TextView) toolbar.findViewById(R.id.header_detail);
+        header_detail.setVisibility(View.INVISIBLE);
+        header_back_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         // get the listview
         gridView = (GridView) findViewById(R.id.gridview);
         // Read json data from local file and parsing the data to arraylist
@@ -59,15 +69,8 @@ public class DashboardActivity extends Activity {
             public void onItemClick(AdapterView<?> parent,
                                     View v, int position, long id){
 
-//
                 String fileType = model.getCategories().get(position).getFileType();
                 String fileName = model.getCategories().get(position).getFileName();
-
-                if(fileType.equalsIgnoreCase("Solutions")){
-                    Intent intent = new Intent(DashboardActivity.this, SubDashboardActivity.class);
-                startActivity(intent);
-                return;
-                }
 
                 if(fileType.equalsIgnoreCase("youtube")) {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(fileName));
@@ -76,22 +79,21 @@ public class DashboardActivity extends Activity {
                     String tempFileName = fileName.substring(0,fileName.indexOf("."));
                     //  Display screenOrientation = getWindowManager().getDefaultDisplay();
                     if(activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-                        Intent intent = new Intent(DashboardActivity.this, SampleActivity.class);
+                        Intent intent = new Intent(SubDashboardActivity.this, SampleActivity.class);
                         intent.putExtra("fileName", tempFileName+"1.pdf");
                         startActivity(intent);
                     }
                     else{
-                        Intent intent = new Intent(DashboardActivity.this, SampleActivity.class);
+                        Intent intent = new Intent(SubDashboardActivity.this, SampleActivity.class);
                         intent.putExtra("fileName", tempFileName+"2.pdf");
                         startActivity(intent);
                     }
-                }
-                else if(fileType.equalsIgnoreCase("image")){
-                    Intent intent = new Intent(DashboardActivity.this, ImageActivity.class);
+                }else if(fileType.equalsIgnoreCase("image")){
+                    Intent intent = new Intent(SubDashboardActivity.this, ImageActivity.class);
                     intent.putExtra("fileName",fileName);
                     startActivity(intent);
                 }else if(fileType.equalsIgnoreCase("video")){
-                    Intent intent = new Intent(DashboardActivity.this, FullscreenActivity.class);
+                    Intent intent = new Intent(SubDashboardActivity.this, FullscreenActivity.class);
                     intent.putExtra("fileName",fileName);
                     startActivity(intent);
                 }
@@ -106,7 +108,7 @@ public class DashboardActivity extends Activity {
     public String readFileFromAssets(){
         String text = "";
         try{
-            InputStream inputStream = getAssets().open("dashboardui.json");
+            InputStream inputStream = getAssets().open("subdashboardui.json");
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
